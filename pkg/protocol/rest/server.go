@@ -11,9 +11,9 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/logger"
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/protocol/rest/middleware"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/api/v1"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/logger"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/protocol/rest/middleware"
 )
 
 // RunServer runs HTTP/REST gateway

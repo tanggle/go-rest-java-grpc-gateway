@@ -9,10 +9,10 @@ import (
 	// mysql driver
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/logger"
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/protocol/grpc"
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/protocol/rest"
-	"github.com/amsokol/go-grpc-http-rest-microservice-tutorial/pkg/service/v1"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/logger"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/protocol/grpc"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/protocol/rest"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/service/v1"
 )
 
 // Config is configuration for Server
