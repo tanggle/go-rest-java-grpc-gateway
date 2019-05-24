@@ -8,6 +8,7 @@ import (
 	"os/signal"
 
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 
 	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/api/v1"
 )
@@ -22,6 +23,9 @@ func RunServer(ctx context.Context, v1API v1.ToDoServiceServer, port string) err
 	// register service
 	server := grpc.NewServer()
 	v1.RegisterToDoServiceServer(server, v1API)
+
+	// Register reflection service on gRPC server
+	reflection.Register(server)
 
 	// graceful shutdown
 	c := make(chan os.Signal, 1)
