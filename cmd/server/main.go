@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/cmd"
+	"github.com/tanggle/go-rest-java-grpc-gateway/pkg/cmd/server"
 )
 
 func main() {
